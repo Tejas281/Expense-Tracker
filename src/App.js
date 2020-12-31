@@ -5,18 +5,20 @@ import {Balance} from './components/Balance'
 import {IncomeExponses} from './components/IncomeExponses'
 import {TransactionList} from './components/TransactionList'
 import {AddTransation} from './components/AddTransation'
+import {GloabalState, GlobalProvider} from './Context/GloabalState'
 
 function App() {
   return (
-    <div >
+  <GlobalProvider>
       <Header/>
       <div className="container">
          <Balance/>
         <IncomeExponses/>
         <TransactionList/>
         <AddTransation/>
+        
       </div>
-    </div>
+      </GlobalProvider>
   );
 }
 

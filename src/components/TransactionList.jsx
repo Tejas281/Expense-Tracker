@@ -3,6 +3,7 @@ import {Transaction} from './Transation'
 import { GlobalContext } from '../Context/GloabalState'
 
 export const TransactionList = () => {
+  
   const { transaction } =  useContext(GlobalContext);
 
   return (

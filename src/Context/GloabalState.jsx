@@ -2,7 +2,8 @@ import React, {createContext, useReducer} from 'react';
 import AppReducer from './AppReducer';
 //initial state
 const initialSate ={
-    transaction: []
+    transaction: [
+]
 }
 
 //Create context
